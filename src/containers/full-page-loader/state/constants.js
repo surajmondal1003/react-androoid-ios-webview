@@ -1,0 +1,1 @@
+export const UPDATE_LOADER_STATE = 'full-page-loader/update/state';

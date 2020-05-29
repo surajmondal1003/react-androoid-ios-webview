@@ -1,0 +1,37 @@
+.faq-section {
+  padding: 25px;
+  background-color: #f9f9f9;
+}
+
+.faq-section .MuiExpansionPanelSummary-root.Mui-expanded {
+  min-height: 40px;
+}
+
+.faq-section .MuiExpansionPanelSummary-content.Mui-expanded {
+  margin: 10px 0;
+}
+
+.faq-section .main-header {
+  color: #000;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.faq-section .expansion-header {
+  font-size: 15px;
+  color: #2497FB;
+}
+
+.faq-section .expansion-content {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+@media (max-width: 767px) {
+  .faq-section {
+    padding: 15px 10px;
+  }
+  .faq-section .expansion-header {
+    font-size: 14px;
+  }
+}

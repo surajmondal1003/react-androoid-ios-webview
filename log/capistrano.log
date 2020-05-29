@@ -1,0 +1,225 @@
+# Logfile created on 2020-05-02 11:22:08 +0530 by logger.rb/47272
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-05-02 11:22:08 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [84e0e713] Running /usr/bin/env mkdir -p /tmp as ubuntu@13.232.47.86
+ DEBUG [84e0e713] Command: /usr/bin/env mkdir -p /tmp
+  INFO [84e0e713] Finished in 1.094 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh 0.0%
+  INFO Uploading /tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh 100.0%
+  INFO [152873e7] Running /usr/bin/env chmod 700 /tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh as ubuntu@13.232.47.86
+ DEBUG [152873e7] Command: /usr/bin/env chmod 700 /tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh
+  INFO [152873e7] Finished in 0.238 seconds with exit status 0 (successful).
+  INFO [2d681eb7] Running /usr/bin/env git ls-remote git@bitbucket.org:nextd/apa_2.0_react_hybrid_web.git HEAD as ubuntu@13.232.47.86
+ DEBUG [2d681eb7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git ls-remote git@bitbucket.org:nextd/apa_2.0_react_hybrid_web.git HEAD )
+ DEBUG [2d681eb7] 	c29482a276796550fa2512160196d644aa442f6e	HEAD
+  INFO [2d681eb7] Finished in 2.815 seconds with exit status 0 (successful).
+  INFO [3d5a7a1f] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared /home/ubuntu/apa_2.0_react_hybrid_web/releases as ubuntu@13.232.47.86
+ DEBUG [3d5a7a1f] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared /home/ubuntu/apa_2.0_react_hybrid_web/releases
+  INFO [3d5a7a1f] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [34de1aa6] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared/node_modules as ubuntu@13.232.47.86
+ DEBUG [34de1aa6] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared/node_modules
+  INFO [34de1aa6] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [946a6de2] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared as ubuntu@13.232.47.86
+ DEBUG [946a6de2] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared
+  INFO [946a6de2] Finished in 0.185 seconds with exit status 0 (successful).
+ DEBUG [2acce19d] Running [ -f /home/ubuntu/apa_2.0_react_hybrid_web/shared/.env ] as ubuntu@13.232.47.86
+ DEBUG [2acce19d] Command: [ -f /home/ubuntu/apa_2.0_react_hybrid_web/shared/.env ]
+ DEBUG [2acce19d] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [e554a0c9] Running [ -f /home/ubuntu/apa_2.0_react_hybrid_web/current/REVISION ] as ubuntu@13.232.47.86
+ DEBUG [e554a0c9] Command: [ -f /home/ubuntu/apa_2.0_react_hybrid_web/current/REVISION ]
+ DEBUG [e554a0c9] Finished in 0.191 seconds with exit status 0 (successful).
+ DEBUG [40b4d6f5] Running /usr/bin/env cat /home/ubuntu/apa_2.0_react_hybrid_web/current/REVISION 2>/dev/null as ubuntu@13.232.47.86
+ DEBUG [40b4d6f5] Command: /usr/bin/env cat /home/ubuntu/apa_2.0_react_hybrid_web/current/REVISION 2>/dev/null
+ DEBUG [40b4d6f5] 	426dfb9af946e4365fb523a47d0b91c385258654
+ DEBUG [40b4d6f5] Finished in 0.164 seconds with exit status 0 (successful).
+ DEBUG [9eb39edf] Running [ -f /home/ubuntu/apa_2.0_react_hybrid_web/repo/HEAD ] as ubuntu@13.232.47.86
+ DEBUG [9eb39edf] Command: [ -f /home/ubuntu/apa_2.0_react_hybrid_web/repo/HEAD ]
+ DEBUG [9eb39edf] Finished in 0.212 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apa_2.0_react_hybrid_web/repo
+ DEBUG [7689db0f] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [7689db0f] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi
+ DEBUG [7689db0f] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [be611173] Running /usr/bin/env git remote set-url origin git@bitbucket.org:nextd/apa_2.0_react_hybrid_web.git as ubuntu@13.232.47.86
+ DEBUG [be611173] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git remote set-url origin git@bitbucket.org:nextd/apa_2.0_react_hybrid_web.git )
+  INFO [be611173] Finished in 0.200 seconds with exit status 0 (successful).
+  INFO [92cae1a4] Running /usr/bin/env git remote update --prune as ubuntu@13.232.47.86
+ DEBUG [92cae1a4] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [92cae1a4] 	Fetching origin
+  INFO [92cae1a4] Finished in 2.736 seconds with exit status 0 (successful).
+ DEBUG [9cc5e673] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [9cc5e673] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi
+ DEBUG [9cc5e673] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [f71ff577] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213 as ubuntu@13.232.47.86
+ DEBUG [f71ff577] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213 )
+  INFO [f71ff577] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [23cfe4a6] Running /usr/bin/env git archive development | /usr/bin/env tar -x -f - -C /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213 as ubuntu@13.232.47.86
+ DEBUG [23cfe4a6] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git archive development | /usr/bin/env tar -x -f - -C /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213 )
+  INFO [23cfe4a6] Finished in 0.200 seconds with exit status 0 (successful).
+ DEBUG [4fdbd803] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [4fdbd803] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi
+ DEBUG [4fdbd803] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [153efd30] Running /usr/bin/env git rev-list --max-count=1 development as ubuntu@13.232.47.86
+ DEBUG [153efd30] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git rev-list --max-count=1 development )
+ DEBUG [153efd30] 	426dfb9af946e4365fb523a47d0b91c385258654
+ DEBUG [153efd30] Finished in 0.187 seconds with exit status 0 (successful).
+ DEBUG [a3b2a56f] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [a3b2a56f] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213'" 1>&2; false; fi
+ DEBUG [a3b2a56f] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [fb9808f9] Running /usr/bin/env echo "426dfb9af946e4365fb523a47d0b91c385258654" > REVISION as ubuntu@13.232.47.86
+ DEBUG [fb9808f9] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213 && /usr/bin/env echo "426dfb9af946e4365fb523a47d0b91c385258654" > REVISION
+  INFO [fb9808f9] Finished in 0.191 seconds with exit status 0 (successful).
+  INFO [7bf58cd8] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213 as ubuntu@13.232.47.86
+ DEBUG [7bf58cd8] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213
+  INFO [7bf58cd8] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [6c2d0926] Running [ -L /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/.env ] as ubuntu@13.232.47.86
+ DEBUG [6c2d0926] Command: [ -L /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/.env ]
+ DEBUG [6c2d0926] Finished in 0.188 seconds with exit status 1 (failed).
+ DEBUG [f0b07873] Running [ -f /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/.env ] as ubuntu@13.232.47.86
+ DEBUG [f0b07873] Command: [ -f /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/.env ]
+ DEBUG [f0b07873] Finished in 0.144 seconds with exit status 1 (failed).
+  INFO [d27d6f1e] Running /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/shared/.env /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/.env as ubuntu@13.232.47.86
+ DEBUG [d27d6f1e] Command: /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/shared/.env /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/.env
+  INFO [d27d6f1e] Finished in 0.190 seconds with exit status 0 (successful).
+  INFO [0d69298c] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213 as ubuntu@13.232.47.86
+ DEBUG [0d69298c] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213
+  INFO [0d69298c] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [bb879aa2] Running [ -L /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/node_modules ] as ubuntu@13.232.47.86
+ DEBUG [bb879aa2] Command: [ -L /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/node_modules ]
+ DEBUG [bb879aa2] Finished in 0.186 seconds with exit status 1 (failed).
+ DEBUG [13c27469] Running [ -d /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/node_modules ] as ubuntu@13.232.47.86
+ DEBUG [13c27469] Command: [ -d /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/node_modules ]
+ DEBUG [13c27469] Finished in 0.141 seconds with exit status 1 (failed).
+  INFO [22ee10db] Running /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/shared/node_modules /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/node_modules as ubuntu@13.232.47.86
+ DEBUG [22ee10db] Command: /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/shared/node_modules /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213/node_modules
+  INFO [22ee10db] Finished in 0.189 seconds with exit status 0 (successful).
+  INFO [0c3d4187] Running /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213 /home/ubuntu/apa_2.0_react_hybrid_web/releases/current as ubuntu@13.232.47.86
+ DEBUG [0c3d4187] Command: /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502055213 /home/ubuntu/apa_2.0_react_hybrid_web/releases/current
+  INFO [0c3d4187] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [e82ee84a] Running /usr/bin/env mv /home/ubuntu/apa_2.0_react_hybrid_web/releases/current /home/ubuntu/apa_2.0_react_hybrid_web as ubuntu@13.232.47.86
+ DEBUG [e82ee84a] Command: /usr/bin/env mv /home/ubuntu/apa_2.0_react_hybrid_web/releases/current /home/ubuntu/apa_2.0_react_hybrid_web
+  INFO [e82ee84a] Finished in 0.185 seconds with exit status 0 (successful).
+ DEBUG [ab8b430d] Running /usr/bin/env ls -x /home/ubuntu/apa_2.0_react_hybrid_web/releases as ubuntu@13.232.47.86
+ DEBUG [ab8b430d] Command: /usr/bin/env ls -x /home/ubuntu/apa_2.0_react_hybrid_web/releases
+ DEBUG [ab8b430d] 	20200502051645	20200502055213
+ DEBUG [ab8b430d] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [89e2c2f6] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/releases; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/releases'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [89e2c2f6] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/releases; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/releases'" 1>&2; false; fi
+ DEBUG [89e2c2f6] Finished in 0.189 seconds with exit status 0 (successful).
+  INFO [b94d0f9d] Running /usr/bin/env echo "Branch development (at 426dfb9af946e4365fb523a47d0b91c385258654) deployed as release 20200502055213 by testing" >> /home/ubuntu/apa_2.0_react_hybrid_web/revisions.log as ubuntu@13.232.47.86
+ DEBUG [b94d0f9d] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/releases && /usr/bin/env echo "Branch development (at 426dfb9af946e4365fb523a47d0b91c385258654) deployed as release 20200502055213 by testing" >> /home/ubuntu/apa_2.0_react_hybrid_web/revisions.log
+  INFO [b94d0f9d] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-05-02 11:42:22 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [758a4443] Running /usr/bin/env mkdir -p /tmp as ubuntu@13.232.47.86
+ DEBUG [758a4443] Command: /usr/bin/env mkdir -p /tmp
+  INFO [758a4443] Finished in 1.052 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh 0.0%
+  INFO Uploading /tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh 100.0%
+  INFO [3122d5ab] Running /usr/bin/env chmod 700 /tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh as ubuntu@13.232.47.86
+ DEBUG [3122d5ab] Command: /usr/bin/env chmod 700 /tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh
+  INFO [3122d5ab] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [a81269f2] Running /usr/bin/env git ls-remote git@bitbucket.org:nextd/apa_2.0_react_hybrid_web.git HEAD as ubuntu@13.232.47.86
+ DEBUG [a81269f2] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git ls-remote git@bitbucket.org:nextd/apa_2.0_react_hybrid_web.git HEAD )
+ DEBUG [a81269f2] 	6a451d68827388454b9c1aaae303ec587d5cf9cd	HEAD
+  INFO [a81269f2] Finished in 3.032 seconds with exit status 0 (successful).
+  INFO [420a6067] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared /home/ubuntu/apa_2.0_react_hybrid_web/releases as ubuntu@13.232.47.86
+ DEBUG [420a6067] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared /home/ubuntu/apa_2.0_react_hybrid_web/releases
+  INFO [420a6067] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [89c7096a] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared/node_modules as ubuntu@13.232.47.86
+ DEBUG [89c7096a] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared/node_modules
+  INFO [89c7096a] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [ccb64a2c] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared as ubuntu@13.232.47.86
+ DEBUG [ccb64a2c] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/shared
+  INFO [ccb64a2c] Finished in 0.184 seconds with exit status 0 (successful).
+ DEBUG [7bd9d966] Running [ -f /home/ubuntu/apa_2.0_react_hybrid_web/shared/.env ] as ubuntu@13.232.47.86
+ DEBUG [7bd9d966] Command: [ -f /home/ubuntu/apa_2.0_react_hybrid_web/shared/.env ]
+ DEBUG [7bd9d966] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [230bd5dc] Running [ -f /home/ubuntu/apa_2.0_react_hybrid_web/current/REVISION ] as ubuntu@13.232.47.86
+ DEBUG [230bd5dc] Command: [ -f /home/ubuntu/apa_2.0_react_hybrid_web/current/REVISION ]
+ DEBUG [230bd5dc] Finished in 0.187 seconds with exit status 0 (successful).
+ DEBUG [b7e3414b] Running /usr/bin/env cat /home/ubuntu/apa_2.0_react_hybrid_web/current/REVISION 2>/dev/null as ubuntu@13.232.47.86
+ DEBUG [b7e3414b] Command: /usr/bin/env cat /home/ubuntu/apa_2.0_react_hybrid_web/current/REVISION 2>/dev/null
+ DEBUG [b7e3414b] 	426dfb9af946e4365fb523a47d0b91c385258654
+ DEBUG [b7e3414b] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [a6689947] Running [ -f /home/ubuntu/apa_2.0_react_hybrid_web/repo/HEAD ] as ubuntu@13.232.47.86
+ DEBUG [a6689947] Command: [ -f /home/ubuntu/apa_2.0_react_hybrid_web/repo/HEAD ]
+ DEBUG [a6689947] Finished in 0.185 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apa_2.0_react_hybrid_web/repo
+ DEBUG [f6bee1c5] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [f6bee1c5] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi
+ DEBUG [f6bee1c5] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [c64a3d90] Running /usr/bin/env git remote set-url origin git@bitbucket.org:nextd/apa_2.0_react_hybrid_web.git as ubuntu@13.232.47.86
+ DEBUG [c64a3d90] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git remote set-url origin git@bitbucket.org:nextd/apa_2.0_react_hybrid_web.git )
+  INFO [c64a3d90] Finished in 0.192 seconds with exit status 0 (successful).
+  INFO [3738a19b] Running /usr/bin/env git remote update --prune as ubuntu@13.232.47.86
+ DEBUG [3738a19b] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [3738a19b] 	Fetching origin
+ DEBUG [3738a19b] 	From bitbucket.org:nextd/apa_2.0_react_hybrid_web
+   426dfb9..c987ef5  development  -> development
+ DEBUG [3738a19b] 	   c29482a..6a451d6  master       -> master
+ DEBUG [3738a19b] 	 * [new branch]      suraj_branch -> suraj_branch
+  INFO [3738a19b] Finished in 3.419 seconds with exit status 0 (successful).
+ DEBUG [488ba8d5] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [488ba8d5] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi
+ DEBUG [488ba8d5] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [87507ec8] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227 as ubuntu@13.232.47.86
+ DEBUG [87507ec8] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227 )
+  INFO [87507ec8] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [e4523616] Running /usr/bin/env git archive development | /usr/bin/env tar -x -f - -C /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227 as ubuntu@13.232.47.86
+ DEBUG [e4523616] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git archive development | /usr/bin/env tar -x -f - -C /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227 )
+  INFO [e4523616] Finished in 0.203 seconds with exit status 0 (successful).
+ DEBUG [be57b374] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [be57b374] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/repo; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/repo'" 1>&2; false; fi
+ DEBUG [be57b374] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [28dfa826] Running /usr/bin/env git rev-list --max-count=1 development as ubuntu@13.232.47.86
+ DEBUG [28dfa826] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apa_2.0_react_hybrid_web-production-testing.sh" ; /usr/bin/env git rev-list --max-count=1 development )
+ DEBUG [28dfa826] 	c987ef5f388cfc5e2a6df150a298fc0f7c9d4d20
+ DEBUG [28dfa826] Finished in 0.185 seconds with exit status 0 (successful).
+ DEBUG [0f90c103] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [0f90c103] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227'" 1>&2; false; fi
+ DEBUG [0f90c103] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [c3e443c2] Running /usr/bin/env echo "c987ef5f388cfc5e2a6df150a298fc0f7c9d4d20" > REVISION as ubuntu@13.232.47.86
+ DEBUG [c3e443c2] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227 && /usr/bin/env echo "c987ef5f388cfc5e2a6df150a298fc0f7c9d4d20" > REVISION
+  INFO [c3e443c2] Finished in 0.186 seconds with exit status 0 (successful).
+  INFO [d355f267] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227 as ubuntu@13.232.47.86
+ DEBUG [d355f267] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227
+  INFO [d355f267] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [2f71317e] Running [ -L /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/.env ] as ubuntu@13.232.47.86
+ DEBUG [2f71317e] Command: [ -L /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/.env ]
+ DEBUG [2f71317e] Finished in 0.185 seconds with exit status 1 (failed).
+ DEBUG [4848391a] Running [ -f /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/.env ] as ubuntu@13.232.47.86
+ DEBUG [4848391a] Command: [ -f /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/.env ]
+ DEBUG [4848391a] Finished in 0.148 seconds with exit status 1 (failed).
+  INFO [74791695] Running /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/shared/.env /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/.env as ubuntu@13.232.47.86
+ DEBUG [74791695] Command: /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/shared/.env /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/.env
+  INFO [74791695] Finished in 0.189 seconds with exit status 0 (successful).
+  INFO [1c36a616] Running /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227 as ubuntu@13.232.47.86
+ DEBUG [1c36a616] Command: /usr/bin/env mkdir -p /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227
+  INFO [1c36a616] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [4b718ccd] Running [ -L /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/node_modules ] as ubuntu@13.232.47.86
+ DEBUG [4b718ccd] Command: [ -L /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/node_modules ]
+ DEBUG [4b718ccd] Finished in 0.181 seconds with exit status 1 (failed).
+ DEBUG [461ad52c] Running [ -d /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/node_modules ] as ubuntu@13.232.47.86
+ DEBUG [461ad52c] Command: [ -d /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/node_modules ]
+ DEBUG [461ad52c] Finished in 0.142 seconds with exit status 1 (failed).
+  INFO [38d60abf] Running /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/shared/node_modules /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/node_modules as ubuntu@13.232.47.86
+ DEBUG [38d60abf] Command: /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/shared/node_modules /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227/node_modules
+  INFO [38d60abf] Finished in 0.189 seconds with exit status 0 (successful).
+  INFO [2a79ba72] Running /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227 /home/ubuntu/apa_2.0_react_hybrid_web/releases/current as ubuntu@13.232.47.86
+ DEBUG [2a79ba72] Command: /usr/bin/env ln -s /home/ubuntu/apa_2.0_react_hybrid_web/releases/20200502061227 /home/ubuntu/apa_2.0_react_hybrid_web/releases/current
+  INFO [2a79ba72] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [db493673] Running /usr/bin/env mv /home/ubuntu/apa_2.0_react_hybrid_web/releases/current /home/ubuntu/apa_2.0_react_hybrid_web as ubuntu@13.232.47.86
+ DEBUG [db493673] Command: /usr/bin/env mv /home/ubuntu/apa_2.0_react_hybrid_web/releases/current /home/ubuntu/apa_2.0_react_hybrid_web
+  INFO [db493673] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [9d36d355] Running /usr/bin/env ls -x /home/ubuntu/apa_2.0_react_hybrid_web/releases as ubuntu@13.232.47.86
+ DEBUG [9d36d355] Command: /usr/bin/env ls -x /home/ubuntu/apa_2.0_react_hybrid_web/releases
+ DEBUG [9d36d355] 	20200502051645	20200502055213	20200502061227
+ DEBUG [9d36d355] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [5467b965] Running if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/releases; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/releases'" 1>&2; false; fi as ubuntu@13.232.47.86
+ DEBUG [5467b965] Command: if test ! -d /home/ubuntu/apa_2.0_react_hybrid_web/releases; then echo "Directory does not exist '/home/ubuntu/apa_2.0_react_hybrid_web/releases'" 1>&2; false; fi
+ DEBUG [5467b965] Finished in 0.182 seconds with exit status 0 (successful).
+  INFO [c5caa3d9] Running /usr/bin/env echo "Branch development (at c987ef5f388cfc5e2a6df150a298fc0f7c9d4d20) deployed as release 20200502061227 by testing" >> /home/ubuntu/apa_2.0_react_hybrid_web/revisions.log as ubuntu@13.232.47.86
+ DEBUG [c5caa3d9] Command: cd /home/ubuntu/apa_2.0_react_hybrid_web/releases && /usr/bin/env echo "Branch development (at c987ef5f388cfc5e2a6df150a298fc0f7c9d4d20) deployed as release 20200502061227 by testing" >> /home/ubuntu/apa_2.0_react_hybrid_web/revisions.log
+  INFO [c5caa3d9] Finished in 0.142 seconds with exit status 0 (successful).
